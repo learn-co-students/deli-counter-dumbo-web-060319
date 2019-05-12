@@ -18,7 +18,10 @@ def line(arr)
 end
 
 def take_a_number(arr, name)
-
+    # Put the person in the line
+    arr << name
+    # Give them a message
+    puts "Welcome, #{name}. You are number #{arr.count} in line."
 end
 
 def now_serving(arr)
