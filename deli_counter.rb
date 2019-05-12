@@ -25,5 +25,16 @@ def take_a_number(arr, name)
 end
 
 def now_serving(arr)
+    # If the array is empty
+    if arr.length == 0 
+        # let the chef know!
+       return puts "There is nobody waiting to be served!"
+    end
 
+    # We will be serving
+    night_king = arr[0]
+    # Now we'll remove 'em from the line
+    arr.shift
+    # Then return our message
+    puts "Currently serving #{night_king}."
 end
